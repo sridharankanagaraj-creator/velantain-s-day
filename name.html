@@ -1,31 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Enter Your Name</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div id="nameEntry">
-    <h2>Enter Your Name 💕</h2>
-    <input type="text" id="nameInput" placeholder="Enter name">
-    <button id="submitNameBtn">Submit</button>
-    <h3 id="output"></h3>
-</div>
-
-<script>
+!DOCTYPE html>
+ <html lang="en">
+     <head> <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Enter Your Name</title> 
+          <link rel="stylesheet" href="style.css"> 
+        </head>
+         <body> 
+            <div id="name Entry"> 
+                 <h2>Enter Your Name 💕</h2> 
+                 <input type="text" id="nameInput" placeholder="Enter name">
+                  <button id="submitNameBtn">Submit</button> 
+                  <h3 id="output"></h3> 
+                </div> 
+                <script>
+                 document.getElementById("submitNameBtn").onclick = function() { let name = document.getElementById("nameInput").value;
+                  if(name === "")
+                  { 
+                    alert("Enter your name!");
+                     } 
+                     else 
+                     { 
+                        document.getElementById("output").innerHTML = "I Love You di pondatti ❤️ Happy Valentine's Day!"; 
+                        }     
+                        
+                }; 
+                </script>
+                <script>
 document.getElementById("submitNameBtn").onclick = function() {
     let name = document.getElementById("nameInput").value;
+
     if(name === ""){
         alert("Enter your name!");
-    } else {
-        document.getElementById("output").innerHTML =
-        "I Love You " + name + " ❤️ Happy Valentine's Day!";
+    } 
+    else {
+        window.location.href = "letter.html"; // Next page open
     }
 };
 </script>
 
-</body>
-</html>
+                 </body>
+                  </html>
