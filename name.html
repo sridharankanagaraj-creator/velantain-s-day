@@ -24,8 +24,7 @@
                         }     
                         
                 }; 
-                </script>
-                <script>
+                 <script>
 document.getElementById("submitNameBtn").onclick = function() {
     let name = document.getElementById("nameInput").value;
 
@@ -33,10 +32,13 @@ document.getElementById("submitNameBtn").onclick = function() {
         alert("Enter your name!");
     } 
     else {
-        window.location.href = "letter.html"; // Next page open
+        localStorage.setItem("loverName", name);
+        window.location.href = "album.html";
     }
 };
 </script>
 
-                 </body>
-                  </html>
+</body>
+</html>
+
+
