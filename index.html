@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Wishes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="entry">
+    <h1>Happy Valentine's Day 💖</h1>
+    <p>Did you love me?</p>
+    <button id="yesBtn">Yes</button>
+    <button id="noBtn">No</button>
+</div>
+
+<audio id="backgroundMusic" loop autoplay>
+    <source src="c:\Users\sridh\Downloads\Neelothi.mp3" type="audio/wav">
+</audio>
+
+<script>
+document.getElementById("yesBtn").onclick = function() {
+    window.location.href = "name.html"; // second page
+};
+
+document.getElementById("noBtn").onclick = function() {
+    alert("Please think again 😢");
+};
+</script>
+
+</body>
+</html>
