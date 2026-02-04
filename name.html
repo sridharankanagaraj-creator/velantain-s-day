@@ -12,6 +12,7 @@
                   <button id="submitNameBtn">Submit</button> 
                   <h3 id="output"></h3> 
                 </div> 
+                 <button onclick="window.location.href='album.html'">submit</button>
                 <script>
                  document.getElementById("submitNameBtn").onclick = function() { let name = document.getElementById("nameInput").value;
                   if(name === "")
@@ -20,25 +21,12 @@
                      } 
                      else 
                      { 
-                        document.getElementById("output").innerHTML = "I Love You di pondatti ❤️ Happy Valentine's Day!"; 
+                      document.getElementById("output").innerHTML = "I Love You di pondatti ❤️ Happy Valentine's Day!"; 
                         }     
                         
                 }; 
                  <script>
-document.getElementById("submitNameBtn").onclick = function() {
-    let name = document.getElementById("nameInput").value;
+                 
 
-    if(name === ""){
-        alert("Enter your name!");
-    } 
-    else {
-        localStorage.setItem("loverName", name);
-        window.location.href = "album.html";
-    }
-};
-</script>
-
-</body>
-</html>
 
 
